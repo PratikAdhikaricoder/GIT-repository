@@ -50,4 +50,47 @@ This is a change from feature-1
 This is a conflicting change from feature-2
 >>>>>>> feature-2
 
+# Git Merge Conflict Demo
+
+This is a change from feature-1
+This is a conflicting change from feature-2
+
+git add README.md
+
+git commit -m "Resolved merge conflict between feature-1 and feature-2"
+
+git remote add origin https://github.com/your-username/git-merge-conflict-demo.git
+git push -u origin main
+
+$ git log --oneline
+bcd1234 (HEAD -> main) Resolved merge conflict between feature-1 and feature-2
+a1b2c3d Change made on feature-2
+56789ab Change made on feature-1
+1234567 Initial commit with README
+
+## Merge Conflict Resolution
+
+During the development of `feature-1` and `feature-2`, a merge conflict occurred in the `README.md` file. Below are the steps taken to resolve it:
+
+1. Both branches modified the same section of `README.md`.
+2. Upon merging `feature-2` into `main`, Git reported a conflict in the `README.md` file.
+3. The conflicting section was:
+   ```text
+   <<<<<<< HEAD
+   This is a change from feature-1
+   =======
+   This is a conflicting change from feature-2
+   >>>>>>> feature-2
+
+---
+
+# **Summary**
+1. A Git repository with a commit history.
+2. Two branches (`feature-1` and `feature-2`) that modify the same file.
+3. A documented process for resolving merge conflicts in `README.md`.
+
+Let me know if you'd like further clarification or additional steps!
+#PratikAdhikari
+
+
 
